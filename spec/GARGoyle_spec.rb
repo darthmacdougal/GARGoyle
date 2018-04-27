@@ -1,9 +1,16 @@
 RSpec.describe GARGoyle do
-  it "has a version number" do
-    expect(GARGoyle::VERSION).not_to be nil
+  it "is an empty sequence" do
+    sequencer = GARGoyle::JobSequencer.new
+    expect(sequencer.process({})).to eq([])
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "is has a sequence of one job" do
+    sequencer = GARGoyle::JobSequencer.new
+    expect(sequencer.process(a: '')).to eq(['a'])
+  end
+
+  it "is has a sequence of three jobs" do
+    sequencer = GARGoyle::JobSequencer.new
+    expect(sequencer.process(a: '', b: '', c: '')).to eq(%w[a b c])
   end
 end
