@@ -1,0 +1,5 @@
+# rspec failure tracking
+.rspec_status
+rspec_output.html
+
+/.idea/
