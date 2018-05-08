@@ -1,8 +1,6 @@
 # GARGoyle
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/GARGoyle`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the GARGoyle gem.  In case you're wondering GAR is my initials.  The "goyle" really doesn't have much relevance, though I suppose if you're from New Jersey you'd say that's how one pronounces "girl".  Since I like "goyles"....but I digress.
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This is intended to be run using rspec to drive it and check for correctness.  Such as:
+
+    $ bundle exec rspec
+
+It will produce a file `rspec_output.html`.
 
 ## Development
 
